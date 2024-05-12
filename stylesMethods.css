@@ -1,0 +1,86 @@
+/* Reset de estilos */
+body, h1, h2, p, button, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.contenido {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Contenedor de los métodos */
+.method-container {
+    margin-left: 26%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Columnas */
+.method-column {
+    flex: 1;
+    padding: 0 10px; /* Agrega padding para separar los elementos */
+    width:20px  ;
+}
+
+/* Enlaces */
+a {
+    display:block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Estilos por categoría */
+.category-1 {
+    background-color: #343536; /* Azul */
+}
+
+.category-2 {
+    background-color: #5a94c0; /* Verde */
+}
+
+.category-3 {
+    background-color: #d78e3b; /* Verde */
+}
+
+.category-4 {
+    background-color: #c3c5c3; /* Verde */
+}
+
+/* Botón "Ver más" */
+#verMasBtn {
+    align-self: center;
+    display: block;
+    margin: 20px auto 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#verMasBtn:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro</title>
+    <link rel="stylesheet" href="stylesFilter.css">
+
+</head>
+<body>
+    <h1>Permítenos ayudarte a encontrar el método que más convenga para tu problema con el siguiente filtro</h1>
+
+    <div class="columns-container">
+        <div class="column">
+            <h3>¿El valor de "n" es un número par o impar?</h3>
+            <ul class="options" id="options1">
+                <li><input type="radio" name="option1" value="opcion1"> Par</li>
+                <li><input type="radio" name="option1" value="opcion2"> Impar</li>
+                <li><input type="radio" name="option1" value="opcion3"> No contiene valor de "n"</li>
+                <li><input type="radio" name="option1" value="opcion4"> Se me solicita hacer el ejercicio con valores de "n" par e impar</li>
+            </ul>
+        </div>
+    
+        <div class="column">
+            <h3>¿Tu ejercicio incluye alguna integral?</h3>
+            <ul class="options" id="options2">
+                <li><input type="radio" name="option2" value="opcion1"> Sí</li>
+                <li><input type="radio" name="option2" value="opcion2"> No</li>
+            </ul>
+        </div>
+    
+        <div class="column">
+            <h3>En caso de que no contenga valores de "n". ¿Los intervalos son uniformes?</h3>
+            <ul class="options" id="options3">
+                <li><input type="radio" name="option3" value="opcion1"> Uniforme</li>
+                <li><input type="radio" name="option3" value="opcion2"> No uniforme</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Botón de buscar -->
+    <button id="buscarBtn">Buscar</button>
+
+    <script src="scriptFilter.js"></script>
+</body>
+</html>
