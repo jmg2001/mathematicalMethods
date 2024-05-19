@@ -1,9 +1,7 @@
-
-
 function handleFilterChange() {
     const selectedOption1 = options1.querySelector('input:checked')?.value;
     
-    if (selectedOption1 === 'opcion3') {
+    if (selectedOption1 === 'sin_N') {
         options3.closest('.column').classList.remove('disabled');
     } else {
         options3.closest('.column').classList.add('disabled');
@@ -16,6 +14,12 @@ options1.addEventListener('change', handleFilterChange);
 handleFilterChange(); // Ejecutar al cargar la página para establecer el estado inicial
 
 document.addEventListener("DOMContentLoaded", function() {
+    function home(){
+        // Redirigir a la nueva URL
+        window.location.href = "index.html";
+    }
+    document.getElementById("homeBtn").addEventListener("click", home);
+
     const options1 = document.getElementById('options1');
     const options2 = document.getElementById('options2');
     const options3 = document.getElementById('options3');
@@ -46,6 +50,19 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Filtro 1:', filtro1);
         console.log('Filtro 2:', filtro2);
         console.log('Filtro 3:', filtro3);
+
+        // Construir la URL con los parámetros
+        const baseUrl = 'methods.html'; // URL de destino
+        const url = new URL(baseUrl, window.location.origin);
+        
+        url.searchParams.append('filter1', filtro1);
+
+        url.searchParams.append('filter2', filtro2);
+
+        console.log(url.toString());
+        
+        // Redirigir a la nueva URL
+        window.location.href = url.toString();
 
         // Aquí puedes ejecutar tu lógica de filtro y mostrar los resultados
         // Por ejemplo, puedes ocultar/mostrar elementos en función de los filtros

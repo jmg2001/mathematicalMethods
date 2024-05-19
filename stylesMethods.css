@@ -34,7 +34,7 @@ h1 {
 
 /* Columnas */
 .method-column {
-    flex: 1;
+    flex: 4;
     padding: 0 10px; /* Agrega padding para separar los elementos */
     width:20px  ;
 }
@@ -47,40 +47,80 @@ a {
     border-radius: 5px;
     text-decoration: none;
     color: #fff;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease; /* Animación suave de los cambios */
+    position: relative; /* Posición relativa para permitir ajustes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+a:hover {
+
+    transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+}
+
+a:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Estilos por categoría */
 .category-1 {
-    background-color: #343536; /* Azul */
+    background-color: #333;
+    color: #fff;
+}
+
+.category-1:hover {
+    background-color: #555;
 }
 
 .category-2 {
-    background-color: #5a94c0; /* Verde */
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-2:hover {
+    background-color: #0056b3;
 }
 
 .category-3 {
-    background-color: #d78e3b; /* Verde */
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+.category-3:hover {
+    background-color: #e8590c;
 }
 
 .category-4 {
-    background-color: #c3c5c3; /* Verde */
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.category-4:hover{
+    background-color: #5a6268;
 }
 
 /* Botón "Ver más" */
-#verMasBtn {
+button {
     align-self: center;
-    display: block;
-    margin: 20px auto 50px;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 5%;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #007bff; /* Azul */
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease; /* Animación suave de los cambios */
 }
 
-#verMasBtn:hover {
+button:hover {
     background-color: #0056b3; /* Azul más oscuro */
+    transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+}
+
+.buttons {
+    align-self: center;
+    margin-left: 41%;
 }
