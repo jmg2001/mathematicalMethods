@@ -99,6 +99,69 @@ a:active {
     background-color: #5a6268;
 }
 
+.category-5 {
+    background-color: #333;
+    color: #fff;
+}
+
+.category-5:hover {
+    background-color: #555;
+}
+
+.category-6 {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-6:hover {
+    background-color: #0056b3;
+}
+
+.category-7 {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+.category-7:hover {
+    background-color: #e8590c;
+}
+
+.category-8 {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.category-8:hover{
+    background-color: #5a6268;
+}
+
+.category-9 {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-9:hover {
+    background-color: #0056b3;
+}
+
+.category-10 {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+.category-10:hover {
+    background-color: #e8590c;
+}
+
+.category-20 {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-20:hover {
+    background-color: #0056b3;
+}
+
 /* Botón "Ver más" */
 button {
     align-self: center;
