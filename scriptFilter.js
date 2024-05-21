@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Filtro 3:', filtro3);
 
         // Construir la URL con los parámetros
-        const baseUrl = 'methods.html'; // URL de destino
+        const baseUrl = 'mathematicalMethods/methods.html'; // URL de destino
         const url = new URL(baseUrl, window.location.origin);
         
         url.searchParams.append('filter1', filtro1);
